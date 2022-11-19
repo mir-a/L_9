@@ -5,5 +5,5 @@ print(response.read())
 
 import requests
 response = requests.qet('https://wikipedia.org/')
-print(response.content)
+print(response.text)
 print(f"Datatype - {type(response.text)}")
