@@ -7,3 +7,8 @@ import requests
 response = requests.qet('https://wikipedia.org/')
 print(response.text)
 print(f"Datatype - {type(response.text)}")
+
+response = requests.post('https://httpbin.org/post', data='Test', heders = {'h1': 'TITLE'})
+print(response.text)
+print(f"Datatype - {type(response.text)}")
+
